@@ -1,0 +1,56 @@
+{
+    "DataSetSummaries": [
+        {
+            "Arn": "arn:aws:quicksight:ap-south-1:034192909931:dataset/08414c28-5d62-40ed-87a9-a643bce3ca09",
+            "DataSetId": "08414c28-5d62-40ed-87a9-a643bce3ca09",
+            "Name": "Web and Social Media Analytics",
+            "CreatedTime": "2024-05-15T16:44:54.132000+05:30",
+            "LastUpdatedTime": "2024-05-15T16:45:07.895000+05:30",
+            "ImportMode": "SPICE",
+            "RowLevelPermissionTagConfigurationApplied": false,
+            "ColumnLevelPermissionRulesApplied": false
+        },
+        {
+            "Arn": "arn:aws:quicksight:ap-south-1:034192909931:dataset/852b4c01-f0ca-4677-936f-238ea2a3dd88",
+            "DataSetId": "852b4c01-f0ca-4677-936f-238ea2a3dd88",
+            "Name": "Business Review",
+            "CreatedTime": "2024-05-15T16:44:53.818000+05:30",
+            "LastUpdatedTime": "2024-05-15T16:45:07.634000+05:30",
+            "ImportMode": "SPICE",
+            "RowLevelPermissionTagConfigurationApplied": false,
+            "ColumnLevelPermissionRulesApplied": false
+        },
+        {
+            "Arn": "arn:aws:quicksight:ap-south-1:034192909931:dataset/9bef3397-602d-44ac-84f0-12630eba9463",
+            "DataSetId": "9bef3397-602d-44ac-84f0-12630eba9463",
+            "Name": "People Overview",
+            "CreatedTime": "2024-05-15T16:44:54.391000+05:30",
+            "LastUpdatedTime": "2024-05-15T16:45:08.485000+05:30",
+            "ImportMode": "SPICE",
+            "RowLevelPermissionTagConfigurationApplied": false,
+            "ColumnLevelPermissionRulesApplied": false
+        },
+        {
+            "Arn": "arn:aws:quicksight:ap-south-1:034192909931:dataset/ba4b0395-e936-4e76-b94e-d9f147b6d846",
+            "DataSetId": "ba4b0395-e936-4e76-b94e-d9f147b6d846",
+            "Name": "Sales Pipeline",
+            "CreatedTime": "2024-05-15T16:44:54.513000+05:30",
+            "LastUpdatedTime": "2024-05-15T16:45:08.414000+05:30",
+            "ImportMode": "SPICE",
+            "RowLevelPermissionTagConfigurationApplied": false,
+            "ColumnLevelPermissionRulesApplied": false
+        },
+        {
+            "Arn": "arn:aws:quicksight:ap-south-1:034192909931:dataset/bf8f7ebc-c7b2-49c0-a44c-3ac92c399d2a",
+            "DataSetId": "bf8f7ebc-c7b2-49c0-a44c-3ac92c399d2a",
+            "Name": "Financials",
+            "CreatedTime": "2024-05-16T13:53:01.306000+05:30",
+            "LastUpdatedTime": "2024-05-16T13:54:54.556000+05:30",
+            "ImportMode": "SPICE",
+            "RowLevelPermissionTagConfigurationApplied": false,
+            "ColumnLevelPermissionRulesApplied": false
+        }
+    ],
+    "Status": 200,
+    "RequestId": "6f568fd3-23f5-4fc3-b22b-c874789028fd"
+}

@@ -1,0 +1,21 @@
+{
+    "Status": 200,
+    "Analysis": {
+        "AnalysisId": "25c3ad1c-2816-4455-b12d-f133b9bb475c",
+        "Arn": "arn:aws:quicksight:ap-south-1:034192909931:analysis/25c3ad1c-2816-4455-b12d-f133b9bb475c",
+        "Name": "Financials analysis",
+        "Status": "CREATION_SUCCESSFUL",
+        "DataSetArns": [
+            "arn:aws:quicksight:ap-south-1:034192909931:dataset/bf8f7ebc-c7b2-49c0-a44c-3ac92c399d2a"
+        ],
+        "CreatedTime": "2024-05-16T13:55:37.176000+05:30",
+        "LastUpdatedTime": "2024-05-17T13:43:13.685000+05:30",
+        "Sheets": [
+            {
+                "SheetId": "148ae7a9-bc48-4570-a2df-2f383e0e9763",
+                "Name": "Sheet 1"
+            }
+        ]
+    },
+    "RequestId": "f7a88670-05e2-4ed8-b398-f6f75bbd33f2"
+}

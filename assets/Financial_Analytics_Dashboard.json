@@ -1,0 +1,799 @@
+{
+    "Status": 200,
+    "DashboardId": "bc123917-9770-41dc-9e95-5e81ffe03f57",
+    "Name": "Financials Analysis",
+    "ResourceStatus": "CREATION_SUCCESSFUL",
+    "Definition": {
+        "DataSetIdentifierDeclarations": [
+            {
+                "Identifier": "Financials",
+                "DataSetArn": "arn:aws:quicksight:ap-south-1:034192909931:dataset/bf8f7ebc-c7b2-49c0-a44c-3ac92c399d2a"
+            }
+        ],
+        "Sheets": [
+            {
+                "SheetId": "bc123917-9770-41dc-9e95-5e81ffe03f57_148ae7a9-bc48-4570-a2df-2f383e0e9763",
+                "Name": "Sheet 1",
+                "Visuals": [
+                    {
+                        "PieChartVisual": {
+                            "VisualId": "bc123917-9770-41dc-9e95-5e81ffe03f57_a9728840-7a47-4851-b2aa-6d1e967ce9af",
+                            "Title": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-title>Sales By Country</visual-title>"
+                                }
+                            },
+                            "Subtitle": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-subtitle>Use this visual to drill-down into specific country.</visual-subtitle>"
+                                }
+                            },
+                            "ChartConfiguration": {
+                                "FieldWells": {
+                                    "PieChartAggregatedFieldWells": {
+                                        "Category": [
+                                            {
+                                                "CategoricalDimensionField": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Country.0.1715848274175",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Country"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Values": [
+                                            {
+                                                "NumericalMeasureField": {
+                                                    "FieldId": "35b092ab-cc40-48b8-b0fb-af3bc4ade4e7.1.1715848384516",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Sale_Price_Decimal"
+                                                    },
+                                                    "AggregationFunction": {
+                                                        "SimpleNumericalAggregation": "SUM"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "SortConfiguration": {
+                                    "CategorySort": [
+                                        {
+                                            "FieldSort": {
+                                                "FieldId": "35b092ab-cc40-48b8-b0fb-af3bc4ade4e7.1.1715848384516",
+                                                "Direction": "DESC"
+                                            }
+                                        }
+                                    ],
+                                    "CategoryItemsLimit": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "SmallMultiplesLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    }
+                                },
+                                "DonutOptions": {
+                                    "ArcOptions": {
+                                        "ArcThickness": "WHOLE"
+                                    }
+                                },
+                                "ValueLabelOptions": {
+                                    "Visibility": "HIDDEN",
+                                    "SortIconVisibility": "VISIBLE"
+                                },
+                                "DataLabels": {
+                                    "Visibility": "VISIBLE",
+                                    "CategoryLabelVisibility": "VISIBLE",
+                                    "MeasureLabelVisibility": "VISIBLE",
+                                    "Overlap": "DISABLE_OVERLAP"
+                                },
+                                "Tooltip": {
+                                    "TooltipVisibility": "VISIBLE",
+                                    "SelectedTooltipType": "DETAILED",
+                                    "FieldBasedTooltip": {
+                                        "AggregationVisibility": "HIDDEN",
+                                        "TooltipTitleType": "PRIMARY_VALUE",
+                                        "TooltipFields": [
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Country.0.1715848274175",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            },
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "35b092ab-cc40-48b8-b0fb-af3bc4ade4e7.1.1715848384516",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "Actions": [
+                                {
+                                    "CustomActionId": "ca38a38d-82f1-447a-953e-ecc9117953c3",
+                                    "Name": "Pie Chart Action",
+                                    "Status": "ENABLED",
+                                    "Trigger": "DATA_POINT_CLICK",
+                                    "ActionOperations": [
+                                        {
+                                            "FilterOperation": {
+                                                "SelectedFieldsConfiguration": {
+                                                    "SelectedFieldOptions": "ALL_FIELDS"
+                                                },
+                                                "TargetVisualsConfiguration": {
+                                                    "SameSheetTargetVisualConfiguration": {
+                                                        "TargetVisuals": [
+                                                            "bc123917-9770-41dc-9e95-5e81ffe03f57_aca8d5f1-5fca-4a7f-8a67-488662583afa",
+                                                            "bc123917-9770-41dc-9e95-5e81ffe03f57_c88282db-56dc-4abd-8eaa-2ba45db2915d",
+                                                            "bc123917-9770-41dc-9e95-5e81ffe03f57_9cdb165b-2ca3-499d-97df-90c3a8346777",
+                                                            "bc123917-9770-41dc-9e95-5e81ffe03f57_702eff0a-8f5b-4afc-aa39-23f335a4f75d",
+                                                            "bc123917-9770-41dc-9e95-5e81ffe03f57_2f8a4138-a468-439e-af33-66af93a5b1a5"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ColumnHierarchies": []
+                        }
+                    },
+                    {
+                        "BarChartVisual": {
+                            "VisualId": "bc123917-9770-41dc-9e95-5e81ffe03f57_aca8d5f1-5fca-4a7f-8a67-488662583afa",
+                            "Title": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-title>Sales by Product</visual-title>"
+                                }
+                            },
+                            "Subtitle": {
+                                "Visibility": "VISIBLE"
+                            },
+                            "ChartConfiguration": {
+                                "FieldWells": {
+                                    "BarChartAggregatedFieldWells": {
+                                        "Category": [
+                                            {
+                                                "CategoricalDimensionField": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Product.0.1715848996173",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Product"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Values": [
+                                            {
+                                                "NumericalMeasureField": {
+                                                    "FieldId": "1b9785ac-6fd3-4ab6-a012-d748b6c488d1.1.1715849068626",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Sales_Decimal"
+                                                    },
+                                                    "AggregationFunction": {
+                                                        "SimpleNumericalAggregation": "SUM"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Colors": []
+                                    }
+                                },
+                                "SortConfiguration": {
+                                    "CategorySort": [
+                                        {
+                                            "FieldSort": {
+                                                "FieldId": "1b9785ac-6fd3-4ab6-a012-d748b6c488d1.1.1715849068626",
+                                                "Direction": "DESC"
+                                            }
+                                        }
+                                    ],
+                                    "CategoryItemsLimit": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "ColorItemsLimit": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "SmallMultiplesLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    }
+                                },
+                                "Orientation": "HORIZONTAL",
+                                "BarsArrangement": "CLUSTERED",
+                                "CategoryAxis": {
+                                    "TickLabelOptions": {
+                                        "LabelOptions": {
+                                            "Visibility": "VISIBLE"
+                                        }
+                                    }
+                                },
+                                "ValueLabelOptions": {
+                                    "Visibility": "HIDDEN"
+                                },
+                                "DataLabels": {
+                                    "Visibility": "VISIBLE",
+                                    "Overlap": "DISABLE_OVERLAP"
+                                },
+                                "Tooltip": {
+                                    "TooltipVisibility": "VISIBLE",
+                                    "SelectedTooltipType": "DETAILED",
+                                    "FieldBasedTooltip": {
+                                        "AggregationVisibility": "HIDDEN",
+                                        "TooltipTitleType": "PRIMARY_VALUE",
+                                        "TooltipFields": [
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Product.0.1715848996173",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            },
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "1b9785ac-6fd3-4ab6-a012-d748b6c488d1.1.1715849068626",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "Actions": [],
+                            "ColumnHierarchies": []
+                        }
+                    },
+                    {
+                        "LineChartVisual": {
+                            "VisualId": "bc123917-9770-41dc-9e95-5e81ffe03f57_c88282db-56dc-4abd-8eaa-2ba45db2915d",
+                            "Title": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-title>Gross Sales by Product</visual-title>"
+                                }
+                            },
+                            "Subtitle": {
+                                "Visibility": "VISIBLE"
+                            },
+                            "ChartConfiguration": {
+                                "FieldWells": {
+                                    "LineChartAggregatedFieldWells": {
+                                        "Category": [
+                                            {
+                                                "CategoricalDimensionField": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Product.1.1715851542746",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Product"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Values": [
+                                            {
+                                                "NumericalMeasureField": {
+                                                    "FieldId": "f57cf360-34b9-4687-85a7-6585ada3f560.1.1715849969085",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Gross_Sales_Decimal"
+                                                    },
+                                                    "AggregationFunction": {
+                                                        "SimpleNumericalAggregation": "SUM"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Colors": []
+                                    }
+                                },
+                                "SortConfiguration": {
+                                    "CategorySort": [
+                                        {
+                                            "FieldSort": {
+                                                "FieldId": "f57cf360-34b9-4687-85a7-6585ada3f560.1.1715849969085",
+                                                "Direction": "DESC"
+                                            }
+                                        }
+                                    ],
+                                    "CategoryItemsLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "ColorItemsLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "SmallMultiplesLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    }
+                                },
+                                "Type": "LINE",
+                                "XAxisDisplayOptions": {
+                                    "TickLabelOptions": {
+                                        "LabelOptions": {
+                                            "Visibility": "VISIBLE"
+                                        },
+                                        "RotationAngle": 90.0
+                                    }
+                                },
+                                "PrimaryYAxisDisplayOptions": {
+                                    "AxisOptions": {
+                                        "TickLabelOptions": {
+                                            "LabelOptions": {
+                                                "Visibility": "VISIBLE"
+                                            }
+                                        }
+                                    }
+                                },
+                                "PrimaryYAxisLabelOptions": {
+                                    "Visibility": "HIDDEN"
+                                },
+                                "Series": [
+                                    {
+                                        "FieldSeriesItem": {
+                                            "FieldId": "f57cf360-34b9-4687-85a7-6585ada3f560.1.1715849969085",
+                                            "AxisBinding": "PRIMARY_YAXIS",
+                                            "Settings": {
+                                                "MarkerStyleSettings": {
+                                                    "MarkerVisibility": "VISIBLE"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "DataLabels": {
+                                    "Visibility": "VISIBLE",
+                                    "Overlap": "DISABLE_OVERLAP"
+                                },
+                                "Tooltip": {
+                                    "TooltipVisibility": "VISIBLE",
+                                    "SelectedTooltipType": "DETAILED",
+                                    "FieldBasedTooltip": {
+                                        "AggregationVisibility": "HIDDEN",
+                                        "TooltipTitleType": "PRIMARY_VALUE",
+                                        "TooltipFields": [
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "f57cf360-34b9-4687-85a7-6585ada3f560.1.1715849969085",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            },
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Product.1.1715851542746",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "VisualPalette": {
+                                    "ColorMap": [
+                                        {
+                                            "Element": {
+                                                "FieldId": "f57cf360-34b9-4687-85a7-6585ada3f560.1.1715849969085",
+                                                "FieldValue": "Gross_Sales_Decimal"
+                                            },
+                                            "Color": "#9FDEF1"
+                                        }
+                                    ]
+                                }
+                            },
+                            "Actions": [],
+                            "ColumnHierarchies": []
+                        }
+                    },
+                    {
+                        "LineChartVisual": {
+                            "VisualId": "bc123917-9770-41dc-9e95-5e81ffe03f57_9cdb165b-2ca3-499d-97df-90c3a8346777",
+                            "Title": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-title>Manufacturing Price by Product</visual-title>"
+                                }
+                            },
+                            "Subtitle": {
+                                "Visibility": "VISIBLE"
+                            },
+                            "ChartConfiguration": {
+                                "FieldWells": {
+                                    "LineChartAggregatedFieldWells": {
+                                        "Category": [
+                                            {
+                                                "CategoricalDimensionField": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Product.1.1715851592664",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Product"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Values": [
+                                            {
+                                                "NumericalMeasureField": {
+                                                    "FieldId": "10677824-836c-4270-b47c-4aa774d18ed6.1.1715851255620",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": " Manufacturing_Price_Decimal"
+                                                    },
+                                                    "AggregationFunction": {
+                                                        "SimpleNumericalAggregation": "SUM"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Colors": []
+                                    }
+                                },
+                                "SortConfiguration": {
+                                    "CategorySort": [
+                                        {
+                                            "FieldSort": {
+                                                "FieldId": "10677824-836c-4270-b47c-4aa774d18ed6.1.1715851255620",
+                                                "Direction": "DESC"
+                                            }
+                                        }
+                                    ],
+                                    "CategoryItemsLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "ColorItemsLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    },
+                                    "SmallMultiplesLimitConfiguration": {
+                                        "OtherCategories": "INCLUDE"
+                                    }
+                                },
+                                "Type": "AREA",
+                                "XAxisDisplayOptions": {
+                                    "TickLabelOptions": {
+                                        "RotationAngle": 90.0
+                                    }
+                                },
+                                "PrimaryYAxisLabelOptions": {
+                                    "Visibility": "HIDDEN"
+                                },
+                                "DataLabels": {
+                                    "Visibility": "VISIBLE",
+                                    "Overlap": "DISABLE_OVERLAP"
+                                },
+                                "Tooltip": {
+                                    "TooltipVisibility": "VISIBLE",
+                                    "SelectedTooltipType": "DETAILED",
+                                    "FieldBasedTooltip": {
+                                        "AggregationVisibility": "HIDDEN",
+                                        "TooltipTitleType": "PRIMARY_VALUE",
+                                        "TooltipFields": [
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "10677824-836c-4270-b47c-4aa774d18ed6.1.1715851255620",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            },
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Product.1.1715851592664",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "Actions": [],
+                            "ColumnHierarchies": []
+                        }
+                    },
+                    {
+                        "HeatMapVisual": {
+                            "VisualId": "bc123917-9770-41dc-9e95-5e81ffe03f57_702eff0a-8f5b-4afc-aa39-23f335a4f75d",
+                            "Title": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-title>Discounts by Country and Segment</visual-title>"
+                                }
+                            },
+                            "Subtitle": {
+                                "Visibility": "VISIBLE"
+                            },
+                            "ChartConfiguration": {
+                                "FieldWells": {
+                                    "HeatMapAggregatedFieldWells": {
+                                        "Rows": [
+                                            {
+                                                "CategoricalDimensionField": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Country.0.1715855066341",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Country"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Columns": [
+                                            {
+                                                "CategoricalDimensionField": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Segment.1.1715855217418",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Segment"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Values": [
+                                            {
+                                                "NumericalMeasureField": {
+                                                    "FieldId": "0bfd1f32-d14b-4b73-b6d5-b9185674a853.2.1715855242838",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "Discounts_Decimal"
+                                                    },
+                                                    "AggregationFunction": {
+                                                        "SimpleNumericalAggregation": "AVERAGE"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "SortConfiguration": {
+                                    "HeatMapColumnSort": [
+                                        {
+                                            "FieldSort": {
+                                                "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Segment.1.1715855217418",
+                                                "Direction": "DESC"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "ColorScale": {
+                                    "Colors": [
+                                        {},
+                                        {}
+                                    ],
+                                    "ColorFillType": "GRADIENT"
+                                },
+                                "Legend": {
+                                    "Visibility": "VISIBLE",
+                                    "Title": {
+                                        "Visibility": "VISIBLE"
+                                    }
+                                },
+                                "DataLabels": {
+                                    "Visibility": "VISIBLE",
+                                    "Overlap": "DISABLE_OVERLAP"
+                                },
+                                "Tooltip": {
+                                    "TooltipVisibility": "VISIBLE",
+                                    "SelectedTooltipType": "DETAILED",
+                                    "FieldBasedTooltip": {
+                                        "AggregationVisibility": "HIDDEN",
+                                        "TooltipTitleType": "PRIMARY_VALUE",
+                                        "TooltipFields": [
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Country.0.1715855066341",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            },
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "9884a9ee-1bcc-4974-ac99-b6f9a2d17751.Segment.1.1715855217418",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            },
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "0bfd1f32-d14b-4b73-b6d5-b9185674a853.2.1715855242838",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "ColumnHierarchies": [],
+                            "Actions": []
+                        }
+                    },
+                    {
+                        "HistogramVisual": {
+                            "VisualId": "bc123917-9770-41dc-9e95-5e81ffe03f57_2f8a4138-a468-439e-af33-66af93a5b1a5",
+                            "Title": {
+                                "Visibility": "VISIBLE",
+                                "FormatText": {
+                                    "RichText": "<visual-title>Cost of Goods Sold</visual-title>"
+                                }
+                            },
+                            "Subtitle": {
+                                "Visibility": "VISIBLE"
+                            },
+                            "ChartConfiguration": {
+                                "FieldWells": {
+                                    "HistogramAggregatedFieldWells": {
+                                        "Values": [
+                                            {
+                                                "NumericalMeasureField": {
+                                                    "FieldId": "a61b7373-f361-4bfb-8266-7d066ab83597.0.1715856780089",
+                                                    "Column": {
+                                                        "DataSetIdentifier": "Financials",
+                                                        "ColumnName": "COGS_Decimal"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "XAxisDisplayOptions": {
+                                    "TickLabelOptions": {
+                                        "RotationAngle": 90.0
+                                    }
+                                },
+                                "BinOptions": {
+                                    "SelectedBinType": "BIN_COUNT",
+                                    "BinCount": {
+                                        "Value": 10
+                                    },
+                                    "StartValue": 0.0
+                                },
+                                "DataLabels": {
+                                    "Visibility": "VISIBLE",
+                                    "Overlap": "DISABLE_OVERLAP"
+                                },
+                                "Tooltip": {
+                                    "TooltipVisibility": "VISIBLE",
+                                    "SelectedTooltipType": "DETAILED",
+                                    "FieldBasedTooltip": {
+                                        "AggregationVisibility": "HIDDEN",
+                                        "TooltipTitleType": "PRIMARY_VALUE",
+                                        "TooltipFields": [
+                                            {
+                                                "FieldTooltipItem": {
+                                                    "FieldId": "a61b7373-f361-4bfb-8266-7d066ab83597.0.1715856780089",
+                                                    "Visibility": "VISIBLE"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "Actions": []
+                        }
+                    }
+                ],
+                "Layouts": [
+                    {
+                        "Configuration": {
+                            "GridLayout": {
+                                "Elements": [
+                                    {
+                                        "ElementId": "bc123917-9770-41dc-9e95-5e81ffe03f57_a9728840-7a47-4851-b2aa-6d1e967ce9af",
+                                        "ElementType": "VISUAL",
+                                        "ColumnIndex": 0,
+                                        "ColumnSpan": 11,
+                                        "RowIndex": 0,
+                                        "RowSpan": 9
+                                    },
+                                    {
+                                        "ElementId": "bc123917-9770-41dc-9e95-5e81ffe03f57_aca8d5f1-5fca-4a7f-8a67-488662583afa",
+                                        "ElementType": "VISUAL",
+                                        "ColumnIndex": 11,
+                                        "ColumnSpan": 12,
+                                        "RowIndex": 0,
+                                        "RowSpan": 9
+                                    },
+                                    {
+                                        "ElementId": "bc123917-9770-41dc-9e95-5e81ffe03f57_c88282db-56dc-4abd-8eaa-2ba45db2915d",
+                                        "ElementType": "VISUAL",
+                                        "ColumnIndex": 0,
+                                        "ColumnSpan": 11,
+                                        "RowIndex": 9,
+                                        "RowSpan": 9
+                                    },
+                                    {
+                                        "ElementId": "bc123917-9770-41dc-9e95-5e81ffe03f57_9cdb165b-2ca3-499d-97df-90c3a8346777",
+                                        "ElementType": "VISUAL",
+                                        "ColumnIndex": 11,
+                                        "ColumnSpan": 12,
+                                        "RowIndex": 9,
+                                        "RowSpan": 9
+                                    },
+                                    {
+                                        "ElementId": "bc123917-9770-41dc-9e95-5e81ffe03f57_702eff0a-8f5b-4afc-aa39-23f335a4f75d",
+                                        "ElementType": "VISUAL",
+                                        "ColumnIndex": 0,
+                                        "ColumnSpan": 11,
+                                        "RowIndex": 18,
+                                        "RowSpan": 8
+                                    },
+                                    {
+                                        "ElementId": "bc123917-9770-41dc-9e95-5e81ffe03f57_2f8a4138-a468-439e-af33-66af93a5b1a5",
+                                        "ElementType": "VISUAL",
+                                        "ColumnIndex": 11,
+                                        "ColumnSpan": 12,
+                                        "RowIndex": 18,
+                                        "RowSpan": 8
+                                    }
+                                ],
+                                "CanvasSizeOptions": {
+                                    "ScreenCanvasSizeOptions": {
+                                        "ResizeOption": "FIXED",
+                                        "OptimizedViewPortWidth": "1600px"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "ContentType": "INTERACTIVE"
+            }
+        ],
+        "CalculatedFields": [
+            {
+                "DataSetIdentifier": "Financials",
+                "Name": "Target Sales",
+                "Expression": "300"
+            }
+        ],
+        "ParameterDeclarations": [],
+        "FilterGroups": [],
+        "AnalysisDefaults": {
+            "DefaultNewSheetConfiguration": {
+                "InteractiveLayoutConfiguration": {
+                    "Grid": {
+                        "CanvasSizeOptions": {
+                            "ScreenCanvasSizeOptions": {
+                                "ResizeOption": "FIXED",
+                                "OptimizedViewPortWidth": "1600px"
+                            }
+                        }
+                    }
+                },
+                "SheetContentType": "INTERACTIVE"
+            }
+        },
+        "Options": {
+            "WeekStart": "SUNDAY"
+        }
+    },
+    "RequestId": "78bdd3cc-e6f4-4eef-a561-ae0abbf0ea42",
+    "DashboardPublishOptions": {
+        "AdHocFilteringOption": {
+            "AvailabilityStatus": "DISABLED"
+        },
+        "ExportToCSVOption": {
+            "AvailabilityStatus": "ENABLED"
+        },
+        "SheetControlsOption": {
+            "VisibilityState": "COLLAPSED"
+        },
+        "SheetLayoutElementMaximizationOption": {
+            "AvailabilityStatus": "ENABLED"
+        },
+        "VisualMenuOption": {
+            "AvailabilityStatus": "ENABLED"
+        },
+        "VisualAxisSortOption": {
+            "AvailabilityStatus": "ENABLED"
+        },
+        "ExportWithHiddenFieldsOption": {
+            "AvailabilityStatus": "DISABLED"
+        },
+        "DataPointDrillUpDownOption": {
+            "AvailabilityStatus": "ENABLED"
+        },
+        "DataPointMenuLabelOption": {
+            "AvailabilityStatus": "ENABLED"
+        },
+        "DataPointTooltipOption": {
+            "AvailabilityStatus": "ENABLED"
+        }
+    }
+}
