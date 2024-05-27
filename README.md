@@ -2,7 +2,7 @@
 
 Using Financials dataset, I've prepared a dashboard showing various metrics and visualizations.
 
-<img src="assets/Financial_Analytics_Dashboard_Preview.pdf" alt=""/>
+<img src="assets/Dashboard_Preview.png" alt=""/>
 
 First Pie chart shows Sales by Country.
 
