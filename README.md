@@ -1,1 +1,1 @@
-# AWS-Quicksight-Dashboard
+# AWS-Quicksight-Dashboards
