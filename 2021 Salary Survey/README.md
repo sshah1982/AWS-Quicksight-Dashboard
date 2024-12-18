@@ -1,6 +1,6 @@
 # AWS-Quicksight-Dashboard
 
-Using Salary survey 2021 datset fo several countries, 
+Using Salary survey 2021 datset fo several countries, I've prepared Pie Chart, Bar Chart, Line Chart, Tree Map, Geospatial Map and Funnel Chart.
 
 <img src="assets/Dashboard_Preview.png" alt=""/>
 
